@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f93e1d">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Register Yourself"
+        app:titleTextColor="#fff"
+        />
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_border2"
+        android:hint="Name (Min. 3 characters) "
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:fontFamily="@font/gayatri"
+        android:padding="8dp"
+        />
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_border2"
+        android:hint="Email Address "
+        android:layout_below="@+id/txtname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:fontFamily="@font/gayatri"
+        android:padding="8dp"
+
+        />
+    <EditText
+        android:id="@+id/txtmobilenumber"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_border2"
+        android:hint="Mobile Number(10 digits) "
+        android:layout_below="@+id/txtemail"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="number"
+        android:maxLength="10"
+        android:fontFamily="@font/gayatri"
+        android:padding="8dp"
+
+        />
+    <EditText
+        android:id="@+id/txtdelivery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_border2"
+        android:hint="Delivery Address "
+        android:layout_below="@+id/txtmobilenumber"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="text"
+        android:padding="8dp"
+        android:fontFamily="@font/gayatri"
+
+        />
+    <EditText
+        android:id="@+id/txtpass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_border2"
+        android:hint="Password(Min 4 characters)"
+        android:fontFamily="@font/gayatri"
+
+        android:layout_below="@+id/txtdelivery"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberPassword"
+        android:padding="8dp"
+
+        />
+    <EditText
+        android:id="@+id/txtconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_border2"
+        android:hint="Confirm Password "
+        android:layout_below="@+id/txtpass"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/gayatri"
+        android:padding="8dp"
+
+        />
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtconfirm"
+        android:layout_marginTop="30dp"
+        android:background="  #ee3438 "
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Register"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:fontFamily="@font/gl"
+        />
+
+
+
+
+
+</RelativeLayout>

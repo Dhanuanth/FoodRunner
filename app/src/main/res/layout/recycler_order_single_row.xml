@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/point"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-17dp"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:src="@drawable/ic_point_foreground" />
+
+        <TextView
+            android:id="@+id/list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/point"
+            android:layout_weight="4.6"
+            android:padding="2dp"
+            android:text="asdfasfdf"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:fontFamily="@font/custom_font_3"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/list"
+            android:layout_weight="1.4"
+            android:padding="5dp"
+            android:text="RS 500"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:fontFamily="@font/corzie"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

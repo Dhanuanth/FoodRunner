@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the received OTP below"
+        android:textSize="26sp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/betroly"/>
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="OTP(4 characters)"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:inputType="number"
+        android:fontFamily="@font/gayatri"
+        />
+    <EditText
+        android:id="@+id/newpassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="New Password(Min. 4 characters)"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/gayatri"
+        />
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Confirm Password"
+        android:padding="10dp"
+        android:background="#fff"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/gayatri"
+        />
+    <Button
+        android:id="@+id/submitotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="23sp"
+        android:background="  #ee3438 "
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gl"
+
+        />
+
+</LinearLayout>

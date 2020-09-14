@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".fragment.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <LinearLayout
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:fontFamily="@font/autined"
+            android:padding="5dp"
+            android:text="Choose  from  menu  listed  below:"
+            android:textColor="#000"
+            android:textSize="20.5sp" />
+
+        <View style="@style/Divider" />
+
+
+        <!--<ImageView
+            android:id="@+id/favo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-10dp"
+            android:layout_toRightOf="@+id/choose"
+            android:layout_weight="1"
+            android:src="@drawable/ic_fav_no_foreground" />-->
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlcontent"
+        android:layout_below="@+id/choose"
+        android:layout_marginTop="16dp"
+        android:padding="0dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--<Button
+        android:id="@+id/cartbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/back"
+        android:text="Proceed to Cart"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+
+        android:fontFamily="@font/gayatri"/>-->
+    <RelativeLayout
+        android:id="@+id/rlcontent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/back">
+
+        <TextView
+            android:id="@+id/proc"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/gl"
+            android:text="PROCEED TO CART"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cartbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="26dp"
+            android:layout_toEndOf="@+id/proc"
+            android:fontFamily="@font/ps"
+            android:text=" rs 700"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/progresslayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/choose">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".fragment.HomeFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_scrollFlags="scroll|enterAlways"/>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar3"
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:text="Ordering from :"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:fontFamily="@font/gayatri"/>
+
+        <TextView
+            android:id="@+id/restname"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:text="balluv"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/choose"
+            android:layout_weight="4.0"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/gl"
+             />
+
+    </LinearLayout>
+    <View style="@style/Divider"
+        android:layout_below="@+id/choose"
+        android:id="@+id/view"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="5dp"
+        android:layout_margin="0dp"
+        android:padding="0dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/recyclerCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="TOTAL :"
+            android:layout_marginLeft="100dp"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:fontFamily="@font/gayatri"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+
+            android:text="Rs.456"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:fontFamily="@font/corzie"/>
+    </LinearLayout>
+<Button
+    android:id="@+id/orderbutton"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/back"
+    android:text="Place order"
+    android:textSize="20sp"
+    android:layout_alignParentBottom="true"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    android:fontFamily="@font/gl"/>
+
+
+
+</RelativeLayout>

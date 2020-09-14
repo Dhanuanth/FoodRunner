@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="sign_up"><u>Don\'t have an account?Sign up now</u></string>
+    <string name="shared_preferances_name">shared_preference</string>
+    <string name="logout"><u>logout</u></string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="q1">How will the food be delivered?</string>
+    <string name="total">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tTOTAL :</string>
+    <string name="a1">Food will be delivered by one of our clients.He will call you within 15 light years after placing the order.Dont need to be panic
+    and you can have your food better but faster from here.
+    </string>
+    <string name="q2">What should i do if the food I ordered is different from  what i get?</string>
+    <string name="a2">If that can happen you could die yesterday.</string>
+    <string name="q3">I am now in Muskito.How much time will it take to get my food if I order it from the Earth?</string>
+    <string name="a3">Sorry,we stopped delivering food from the Earth.</string>
+    <string name="q4">I have waited for 16 light years.And still  havent got my ordered food.What should I do?</string>
+    <string name="a4">Better but faster.</string>
+
+</resources>
